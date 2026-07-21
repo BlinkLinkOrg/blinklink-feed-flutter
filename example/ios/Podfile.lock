@@ -14,30 +14,22 @@ PODS:
 
 DEPENDENCIES:
   - blinklink_feed (from `.symlinks/plugins/blinklink_feed/ios`)
-  - BlinklinkFeed (from `https://github.com/BlinkLinkOrg/blinklink-feed-ios.git`, tag `v0.1.0`)
   - Flutter (from `Flutter`)
   - integration_test (from `.symlinks/plugins/integration_test/ios`)
 
 SPEC REPOS:
   trunk:
+    - BlinklinkFeed
     - Connect-Swift
     - SwiftProtobuf
 
 EXTERNAL SOURCES:
   blinklink_feed:
     :path: ".symlinks/plugins/blinklink_feed/ios"
-  BlinklinkFeed:
-    :git: https://github.com/BlinkLinkOrg/blinklink-feed-ios.git
-    :tag: v0.1.0
   Flutter:
     :path: Flutter
   integration_test:
     :path: ".symlinks/plugins/integration_test/ios"
-
-CHECKOUT OPTIONS:
-  BlinklinkFeed:
-    :git: https://github.com/BlinkLinkOrg/blinklink-feed-ios.git
-    :tag: v0.1.0
 
 SPEC CHECKSUMS:
   blinklink_feed: d27a70fd80a1b9b6ab374744ef8c086991a33d3c
@@ -47,6 +39,6 @@ SPEC CHECKSUMS:
   integration_test: 4a889634ef21a45d28d50d622cf412dc6d9f586e
   SwiftProtobuf: 3697407f0d5b23bedeba9c2eaaf3ec6fdff69349
 
-PODFILE CHECKSUM: 270e24415dab8119ea1e907930301d424db15a3c
+PODFILE CHECKSUM: 2985a7d963bc1d89fb9a5231905015c0982c117a
 
 COCOAPODS: 1.17.0
