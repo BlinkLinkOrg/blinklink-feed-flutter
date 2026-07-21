@@ -30,8 +30,6 @@ flutter_ios_podfile_setup
 target 'Runner' do
   use_frameworks!
 
-  # Until BlinklinkFeed is published to CocoaPods trunk, resolve it from git:
-  pod 'BlinklinkFeed', :git => 'https://github.com/BlinkLinkOrg/blinklink-feed-ios.git', :tag => 'v0.1.0'
 
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
   target 'RunnerTests' do
