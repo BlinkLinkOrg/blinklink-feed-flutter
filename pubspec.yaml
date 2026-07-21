@@ -1,0 +1,26 @@
+name: blinklink_feed
+description: "Blinklink server-driven short-form video feeds for Flutter — a thin passthrough over the native Blinklink iOS SDK (Android placeholder in 0.x)."
+version: 0.1.0
+homepage: https://github.com/BlinkLinkOrg/blinklink-feed-flutter
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.blinklink.blinklink_feed
+        pluginClass: BlinklinkFeedPlugin
+      ios:
+        pluginClass: BlinklinkFeedPlugin

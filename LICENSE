@@ -1,0 +1,34 @@
+Blinklink SDK License (Source-Available)
+
+Copyright (c) 2026 Blinklink, Inc. All rights reserved.
+
+1. Grant. Subject to the terms of this license, Blinklink, Inc. ("Blinklink")
+   grants you a non-exclusive, non-transferable, royalty-free license to use,
+   reproduce, and distribute this software development kit (the "SDK"),
+   in source or binary form, solely as incorporated into applications that
+   you develop and that interoperate with Blinklink services.
+
+2. Restrictions. You may not: (a) distribute the SDK on a standalone basis;
+   (b) modify the SDK except to the extent necessary to integrate it into
+   your applications; (c) use the SDK to develop a product or service that
+   competes with Blinklink services; (d) remove or alter any copyright or
+   proprietary notices in the SDK.
+
+3. Ownership. The SDK is licensed, not sold. Blinklink and its licensors
+   retain all right, title, and interest in and to the SDK.
+
+4. No Warranty. THE SDK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+5. Limitation of Liability. IN NO EVENT SHALL BLINKLINK BE LIABLE FOR ANY
+   CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+   TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SDK
+   OR THE USE OR OTHER DEALINGS IN THE SDK.
+
+6. Termination. This license terminates automatically if you breach any of
+   its terms. Upon termination you must cease distribution of the SDK,
+   except that copies already embedded in applications distributed to end
+   users may remain in place.
+
+For other licensing arrangements, contact support@blinklink.com.
