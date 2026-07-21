@@ -3,8 +3,8 @@
 Blinklink server-driven short-form video feeds for Flutter — a thin
 passthrough over the native
 [Blinklink iOS SDK](https://github.com/BlinkLinkOrg/blinklink-feed-ios).
-Layouts, content, and experiments update from the Blinklink portal with
-**no app release**.
+Layouts, content, and experiments update from the Blinklink marketer app
+with **no app release**.
 
 > **Platform status (0.x)**: iOS renders the full experience. Android
 > renders a placeholder — the native Android renderer arrives in an
@@ -32,13 +32,15 @@ import 'package:blinklink_feed/blinklink_feed.dart';
 await Blinklink.initialize(
   clientId: 'YOUR_CLIENT_ID',
   environment: BlinklinkEnvironment.development,
+  stream: 'YOUR_STREAM',
+  placement: 'YOUR_PLACEMENT',
 );
 
-// The full Frontline Feed experience as a tab body:
-const BlinklinkScreen(screenId: 'inspire')
-
-// An embeddable referrer feed (give it a bounded height in scrollables):
+// A carousel embed (bounded height in scrollables; also: FeedLayout.carousel3D):
 const SizedBox(height: 320, child: BlinklinkFeedView(layout: FeedLayout.carousel, title: 'Today'))
+
+// A grid embed:
+const Expanded(child: BlinklinkFeedView(layout: FeedLayout.grid))
 
 // A directly scrollable player surface for a whole tab:
 const BlinklinkSuperFeed()
