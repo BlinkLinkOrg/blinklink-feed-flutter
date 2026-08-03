@@ -9,24 +9,6 @@ enum FeedLayout { carousel, carousel3D, grid }
 
 bool get _isIOS => !kIsWeb && Platform.isIOS;
 
-/// A server-driven Blinklink screen (e.g. `"inspire"` — the full Frontline
-/// Feed experience). Give it bounded size (`Expanded`, a tab body, …).
-class BlinklinkScreen extends StatelessWidget {
-  const BlinklinkScreen({super.key, this.screenId = 'inspire'});
-
-  /// Server-driven screen id, e.g. `"inspire"` or `"videos"`.
-  final String screenId;
-
-  @override
-  Widget build(BuildContext context) => _isIOS
-      ? UiKitView(
-          viewType: 'blinklink_feed/screen',
-          creationParams: {'screenId': screenId},
-          creationParamsCodec: const StandardMessageCodec(),
-        )
-      : const _AndroidPlaceholder();
-}
-
 /// An embeddable referrer feed (carousel / 3D carousel / grid). Give it an
 /// explicit height (e.g. `SizedBox(height: 320)`) when used in a scroll
 /// view or `Column`.

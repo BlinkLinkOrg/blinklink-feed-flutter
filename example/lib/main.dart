@@ -46,7 +46,6 @@ class _HomePageState extends State<HomePage> {
         index: _tab,
         children: const [
           _HostHome(),
-          BlinklinkScreen(screenId: 'inspire'),
           BlinklinkSuperFeed(),
         ],
       ),
@@ -55,7 +54,6 @@ class _HomePageState extends State<HomePage> {
         onDestinationSelected: (i) => setState(() => _tab = i),
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
-          NavigationDestination(icon: Icon(Icons.auto_awesome), label: 'Inspire'),
           NavigationDestination(icon: Icon(Icons.play_circle), label: 'Videos'),
         ],
       ),

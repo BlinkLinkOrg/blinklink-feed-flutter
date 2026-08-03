@@ -19,7 +19,6 @@ public class BlinklinkFeedPlugin: NSObject, FlutterPlugin, FlutterStreamHandler 
             binaryMessenger: registrar.messenger()
         ).setStreamHandler(instance)
 
-        registrar.register(BLScreenViewFactory(), withId: "blinklink_feed/screen")
         registrar.register(BLFeedViewFactory(), withId: "blinklink_feed/feed")
         registrar.register(BLSuperFeedViewFactory(), withId: "blinklink_feed/superfeed")
     }

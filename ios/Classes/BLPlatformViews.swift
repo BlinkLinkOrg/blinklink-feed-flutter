@@ -17,28 +17,6 @@ private func creationArgs(_ args: Any?) -> [String: Any] {
     args as? [String: Any] ?? [:]
 }
 
-// MARK: - Screen
-
-final class BLScreenViewFactory: NSObject, FlutterPlatformViewFactory {
-    func createArgsCodec() -> FlutterMessageCodec & NSObjectProtocol {
-        FlutterStandardMessageCodec.sharedInstance()
-    }
-
-    func create(withFrame _: CGRect, viewIdentifier _: Int64, arguments args: Any?) -> FlutterPlatformView {
-        let screenId = creationArgs(args)["screenId"] as? String ?? "inspire"
-        let container = BLVCContainerView {
-            let id: BLScreenID
-            switch screenId {
-            case "inspire": id = .inspire
-            case "videos": id = .videos
-            default: id = .custom(screenId)
-            }
-            return Blinklink.screenViewController(id: id)
-        }
-        return BLWrappedPlatformView(contained: container)
-    }
-}
-
 // MARK: - Referrer feed
 
 final class BLFeedViewFactory: NSObject, FlutterPlatformViewFactory {
