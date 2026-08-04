@@ -30,6 +30,7 @@ public class BlinklinkFeedPlugin: NSObject, FlutterPlugin, FlutterStreamHandler 
             Self.interceptedTypes = Set(args["interceptActions"] as? [String] ?? [])
             let environment: BLEnvironment =
                 (args["environment"] as? String) == "development" ? .development : .production
+            Blinklink.sdkDistribution = "flutter" // analytics: which wrapper shipped this SDK
             Blinklink.configure(
                 clientId: args["clientId"] as? String ?? "",
                 environment: environment,
